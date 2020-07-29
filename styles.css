@@ -1,0 +1,99 @@
+body {
+    background: url(img/lizards-vector-icons-600w-632789678.jpg);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #8d8d8d;
+    font-size: 64px;
+    letter-spacing: 0.5em;
+    margin: 20px;
+    padding-left: 40px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #8d8d8d;
+    text-align: center;
+}
+
+nav {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header a {
+    display: inline-block;
+    color: #888888;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+    padding-bottom: 5px;;
+}
+
+header a:hover {
+    background-color: #888888;
+    color: #333333;
+}
+
+.main-content {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 75vh;
+    width: 55%;
+    background-color: #cccccc;
+    text-align: center;
+    align-items: center;
+}
+
+.main-content p {
+    width: 60%;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+.portrait {
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    background-color: #333333;
+    margin-top: 16px;
+    width: 100%;
+}
+
+footer p {
+    margin-left: 20px;
+}
