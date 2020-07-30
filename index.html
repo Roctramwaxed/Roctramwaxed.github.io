@@ -2,18 +2,23 @@
 
 <html>
     <head>
-        <title>Weather</title>
-        <link rel="icon" href="img/Sven_minimap_icon.png">
+        <title>INVOKER</title>
+        <link rel="icon" href="https://gamepedia.cursecdn.com/dota2_gamepedia/7/7d/Invoker_minimap_icon.png">
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <audio hidden src="media/Vo_invoker_invo_begin_01.mp3" autoplay></audio>
         <header>
-            <h1>MiWeather</h1>
-            <p>Find your sky mood!</p>
+            <div class="logo">
+                <h1>INV</h1>
+                <img id="hero-icon" src="https://gamepedia.cursecdn.com/dota2_gamepedia/0/00/Invoker_icon.png?version=fb7516f0b780535fa8acfa9e8cb99266">
+                <h1>KER</h1>
+            </div>
+            <p>So begins a new age of knowledge</p>
             <nav>
-                <a href="index.html">Weather</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="help.html">Help</a>
             </nav>
@@ -21,21 +26,32 @@
         </header>
 
         <div class="main-content">
+            <section class="orbs">
+                <h2>Press the elements</h2>
+                <button><img id="q" src="media/Quas_icon.png"></button>
+                <button><img id="w" src="media/Wex_icon.png"></button>
+                <button><img id="e" src="media/Exort_icon.png"></button>
+            </section>
 
-            <form>
-                <p>Enter location below</p>
-                <input placeholder="Location">
-                <button>
-                    Search
-                </button>
-            </form>
-            <br>
-            <p id="message-1">text</p>
-            <p id="message-2"></p>
+            <section class="pressed">
+                <h2>Active elements will be shown below (max 3)</h2>
+                <img id="first" src="media/Blank.png">
+                <img id="second" src="media/Blank.png">
+                <img id="third" src="media/Blank.png">
+            </section>
+
+            <section class="spell">
+                <h2>Press here to invoke</h2>
+                <button onclick="PlaySound()"><img id="invoked" src="media/Invoke_icon.png"></button>
+                <img id="spell" src="media/Blank.png">
+            </section>
+            <p id="spellName"></p>
         </div>
 
         <footer>
             <p>Created by Izra manusia reptil</p>
         </footer>
+
+        <script src="app.js"></script>
     </body>
 </html>
